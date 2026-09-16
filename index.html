@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supawat Siriwirot | Software Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;DevName /&gt;</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <p class="hero-subtitle">Hi, my name is</p>
+      <h1 class="hero-title">Supawat Siriwirot.</h1>
+      <h2 class="hero-tagline">I build scalable software for the web.</h2>
+      <p class="hero-description">
+        I am a student studying software development looking for opportunities for higher educations.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-heading"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a currently student studying software development at Tampereen Teknillinen Lukio. I enjoy solving logical problems and building web projects
+          </p>
+
+        </div>
+        <div class="about-image-wrapper">
+          <div class="image-frame"></div>
+          <!-- Replace URL with your actual profile picture -->
+          <img src="https://unsplash.com" alt="Your Headshot" class="profile-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-heading"><span>02.</span> Technical Skills</h2>
+      <div class="skills-grid">
+        
+        <!-- Category 1 -->
+        <div class="skill-card">
+          <h3 class="skill-title">Languages</h3>
+          <ul class="skill-list">
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 & CSS3</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-card">
+          <h3 class="skill-title">Frameworks & Tools</h3>
+          <ul class="skill-list">
+            <li>React / Next.js</li>
+            <li>Node.js / Express</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-card">
+          <h3 class="skill-title">Databases & DevOps</h3>
+          <ul class="skill-list">
+            <li>cPanel</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-heading"><span>03.</span> Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📂</span>
+            <div class="project-links">
+              <a href="https://github.com/Pueple-SS/taipale" target="_blank" rel="noopener noreferrer" title="GitHub Source">Code</a>
+              <a href="https://pueple-ss.github.io/taipale/" target="_blank" rel="noopener noreferrer" title="Live Demo">Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">Taipale</h3>
+          <p class="project-desc">
+            A website for booking a camping site and reservation of a building with a form calculating the staying cost. Information about food and activities also avaiable.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact-section bg-alt">
+    <div class="container small-container">
+      <p class="contact-subtitle">04. What's Next?</p>
+      <h2 class="contact-title">Get In Touch</h2>
+      <p class="contact-desc">
+        I'm currently seeking new full-time software developer opportunities or interesting freelance projects. Drop a line and I will reply as soon as possible.
+      </p>
+      
+      <!-- Contact Form -->
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Let's build something together..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com/Pueple-SS" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+      <p class="footer-text">Built with plain HTML & CSS. Hosted live on the web.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
